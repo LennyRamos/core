@@ -1,0 +1,32 @@
+package searchAlgorithms
+
+/**
+ * @author Lenny Ramos
+ *
+ * Linear Search Algorithm
+ * @see <a href="https://www.geeksforgeeks.org/binary-search/">Binary Search</a>
+ */
+
+class BinarySearch {
+
+    fun doBinarySearch(array: Array<Int>, numToSearchFor: Int): Int {
+
+        var middle: Int
+        var beginning: Int = 0
+        var end: Int = array.size -1
+
+        while (beginning <= end) {
+            middle = beginning + (end - beginning) / 2
+
+            if (array[middle] == numToSearchFor) return middle
+
+            if (array[middle] > numToSearchFor) {
+                end = middle - 1
+            } else {
+                beginning = middle + 1
+            }
+        }
+
+        return -1
+    }
+}

@@ -9,7 +9,7 @@ package searchAlgorithms
 
 class LinearSearch {
 
-    fun linearSearch(array: Array<Int>, numToSearch: Int): Int {
+    fun doLinearSearch(array: Array<Int>, numToSearch: Int): Int {
         if (array.isEmpty()) {
             return -1
         }
