@@ -1,0 +1,11 @@
+package searchAlgorithms.strategyPattern
+
+/**
+ * @author Lenny Ramos
+ */
+interface ISearchStrategy {
+    var array: Array<Int>?
+    var numToSearchFor: Int
+    var index: Int
+    fun search(arr: Array<Int>, i: Int): Int
+}
