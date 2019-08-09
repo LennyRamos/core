@@ -15,8 +15,11 @@ fun main(args: Array<String>) {
     searchMap["LinearSearch"] = LinearSearch()
     searchMap["BinarySearch"] = BinarySearch()
 
-    execute(searchMap["LinearSearch"], arr, 170)
-    execute(searchMap["BinarySearch"], arr, 130)
+    val linearSearch = execute(searchMap["LinearSearch"], arr, 170)
+    println("This was the result of linear search >> $linearSearch")
+    
+    val binarySearch = execute(searchMap["BinarySearch"], arr, 130)
+    println("This was the result of binary search >> $binarySearch")
 }
 
 fun execute(strategy: ISearchStrategy?, array: Array<Int>, numToSearch: Int): Int {
