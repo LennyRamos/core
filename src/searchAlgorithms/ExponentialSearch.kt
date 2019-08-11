@@ -1,0 +1,4 @@
+package searchAlgorithms
+
+class ExponentialSearch {
+}
