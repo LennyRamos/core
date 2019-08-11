@@ -1,4 +1,5 @@
 import searchAlgorithms.BinarySearch
+import searchAlgorithms.ExponentialSearch
 import searchAlgorithms.InterpolationSearch
 import searchAlgorithms.strategyPattern.ISearchStrategy
 import searchAlgorithms.LinearSearch
@@ -16,6 +17,7 @@ fun main(args: Array<String>) {
     searchMap["LinearSearch"] = LinearSearch()
     searchMap["BinarySearch"] = BinarySearch()
     searchMap["InterpolationSearch"] = InterpolationSearch()
+    searchMap["ExponentialSearch"] = ExponentialSearch()
 
     val linearSearch = execute(searchMap["LinearSearch"], arr, 170)
     println("This is the result of linear search >> $linearSearch")
@@ -25,6 +27,10 @@ fun main(args: Array<String>) {
 
     val interpolationSearch = execute(searchMap["InterpolationSearch"], arr, 100)
     println("This is the result of interpolation search >> $interpolationSearch")
+
+    val exponentialSearch: Int = execute(searchMap["ExponentialSearch"], arr, 10)
+    println("This is the result of exponential search >> $exponentialSearch")
+
 }
 
 fun execute(strategy: ISearchStrategy?, array: Array<Int>, numToSearch: Int): Int {

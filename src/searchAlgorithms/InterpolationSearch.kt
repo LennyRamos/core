@@ -5,7 +5,7 @@ import searchAlgorithms.strategyPattern.SearchSolution
 /**
  * @author Lenny Ramos
  *
- * Linear Search Algorithm
+ * Interpolation Search Algorithm
  * @see <a href="https://www.geeksforgeeks.org/linear-search/">Linear Search</a>
  */
 
