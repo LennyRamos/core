@@ -2,6 +2,8 @@ package searchAlgorithms.strategyPattern
 
 /**
  * @author Lenny Ramos
+ *
+ * @see <a href="https://sourcemaking.com/design_patterns/strategy">Strategy Pattern</a>s
  */
 interface ISearchStrategy {
     var array: Array<Int>?
