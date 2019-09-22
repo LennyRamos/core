@@ -1,4 +1,4 @@
-package searchAlgorithms.strategyPattern
+package searchalgorithms.strategypattern
 
 /**
  * @author Lenny Ramos

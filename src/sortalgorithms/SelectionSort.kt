@@ -1,0 +1,4 @@
+package sortalgorithms
+
+class SelectionSort {
+}

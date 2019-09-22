@@ -1,6 +1,6 @@
-package searchAlgorithms
+package searchalgorithms
 
-import searchAlgorithms.strategyPattern.SearchSolution
+import searchalgorithms.strategypattern.SearchSolution
 
 /**
  * @author Lenny Ramos

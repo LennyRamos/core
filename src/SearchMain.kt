@@ -1,8 +1,8 @@
-import searchAlgorithms.BinarySearch
-import searchAlgorithms.ExponentialSearch
-import searchAlgorithms.InterpolationSearch
-import searchAlgorithms.strategyPattern.ISearchStrategy
-import searchAlgorithms.LinearSearch
+import searchalgorithms.BinarySearch
+import searchalgorithms.ExponentialSearch
+import searchalgorithms.InterpolationSearch
+import searchalgorithms.strategypattern.ISearchStrategy
+import searchalgorithms.LinearSearch
 
 /**
  * Main to execute all of the Search Algorithms
