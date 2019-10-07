@@ -10,8 +10,21 @@ import sortalgorithms.strategypattern.SortSolution
  */
 class SelectionSort : SortSolution() {
     override fun solve(arr: Array<Int>): Array<Int> {
-        array = arr
+        val sortedArray: Array<Int> = arrayOf(arr.size)
+        var index: Int = 0
+        var least: Int = arr[index]
 
-        return arr
+        for (a: Int in arr) {
+
+            if (least > a) {
+                least = a
+            }
+
+
+            sortedArray[index] = least
+            index++
+        }
+
+        return sortedArray
     }
 }
