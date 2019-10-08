@@ -1,4 +1,5 @@
 import hackerrank.problemsolving.AVeryBigSum
+import hackerrank.problemsolving.DiagonalDifference
 import hackerrank.problemsolving.SimpleArraySum
 import searchalgorithms.*
 
@@ -17,7 +18,10 @@ fun main(args: Array<String>) {
     // val simpleArraySum = SimpleArraySum();
     // simpleArraySum.run(args);
 
-    val aVeryLargeArraySum = AVeryBigSum();
-    aVeryLargeArraySum.run(args);
+    // val aVeryLargeArraySum = AVeryBigSum();
+    // aVeryLargeArraySum.run(args);
+
+    val diagonalDifference = DiagonalDifference();
+    diagonalDifference.run(args);
 }
 
