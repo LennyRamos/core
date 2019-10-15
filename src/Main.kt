@@ -1,7 +1,4 @@
-import hackerrank.problemsolving.AVeryBigSum
-import hackerrank.problemsolving.DiagonalDifference
-import hackerrank.problemsolving.SimpleArraySum
-import searchalgorithms.*
+import hackerrank.problemsolving.easy.DiagonalDifference
 
 /**
  * @author Lenny Ramos

@@ -1,4 +1,4 @@
-package hackerrank.problemsolving
+package hackerrank.problemsolving.easy
 
 import kotlin.math.abs
 
