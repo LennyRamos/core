@@ -22,17 +22,22 @@ class FormingAMagicSquare {
 
     // The numbers needed in each sum to be a magic sum
     // values same as above
-    private var neededForMagicSquare = Array(8) { 0 }
+    private var neededForMagicSquare = Array(8) { 15 }
 
     // make magic square
     private fun formingMagicSquare(s: Array<Array<Int>>): Int {
 
+        checkSums(s)
+        getDifferenceNeededForMagicSquare()
 
         return 0
     }
 
     /**
      * O((1/3)n) == O(n)
+     *
+     * can make to check by double for loop if its
+     * an unknown size matrix of NxN
      */
     private fun checkSums(arr: Array<Array<Int>>) {
 
@@ -40,23 +45,48 @@ class FormingAMagicSquare {
 
         for (x in 0..sizeOfDoubleMatrix) {
             //rows
-            sumArray[0] += arr[x][0]
-            sumArray[1] += arr[x][1]
-            sumArray[2] += arr[x][2]
+            sumArray[0] += arr[0][x]
+            sumArray[1] += arr[1][x]
+            sumArray[2] += arr[2][x]
             //columns
-            sumArray[3] += arr[0][x]
-            sumArray[4] += arr[1][x]
-            sumArray[5] += arr[2][x]
+            sumArray[3] += arr[x][0]
+            sumArray[4] += arr[x][1]
+            sumArray[5] += arr[x][2]
             //diags
             sumArray[6] += arr[x][x]
             sumArray[7] += arr[x][(sizeOfDoubleMatrix) - x]
         }
-        println("These are the values of the matrix for magic square ")
+        printArray(sumArray, "These are the values of the matrix for magic square")
+    }
 
-        for (y in 0 until sumArray.size) {
-            println("$y :: " + sumArray[y])
+    /**
+     * Gets the difference needed for each sum in sumArray to figure out what
+     * is needed to make the magic square
+     */
+    private fun getDifferenceNeededForMagicSquare() {
+        for (x in 0 until sumArray.size) {
+            neededForMagicSquare[x] -= sumArray[x]
         }
+        printArray(neededForMagicSquare, "These are the value needed for making perfect square")
+    }
 
+    /**
+     * This looks at what the values of neededForMagicSquare
+     * and recalculates certain entries in the matrix to transform
+     * it into a perfect square
+     */
+    private fun makeMagicSquare() {
+
+    }
+
+    /**
+     * stupid helper function to print array values
+     */
+    private fun printArray(arr: Array<Int>, s: String) {
+        println(s)
+        for (y in 0 until arr.size) {
+            println("$y :: " + arr[y])
+        }
     }
 
     fun run(args: Array<String>) {
