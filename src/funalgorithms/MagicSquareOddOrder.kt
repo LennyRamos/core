@@ -1,7 +1,7 @@
 package funalgorithms
 
+import hackerrank.problemsolving.medium.FormingAMagicSquare
 import java.util.*
-import kotlin.math.roundToInt
 
 /**
  * For a given odd value of N
@@ -41,55 +41,61 @@ class MagicSquareOddOrder {
         var x = ((lastIndexOfArr) / 2)
         var y = 0
 
-        println(x)
-        println(y)
+        oddOrder[x][y] = 1
 
-        oddOrder[y][x] = 1
+        var tempX: Int
+        var tempY: Int
 
         for (nextNumber: Int in 2..number) {
-            x = updateIndexX(x)
-            y = updateIndexY(y)
 
-            println("adding this number $nextNumber")
-            println("value of cell about to add: " + oddOrder[x][y])
+            tempX = x
+            tempY = y
+
+            y = updateIndexY(y)
+            x = updateIndexX(x)
+
 
             if (oddOrder[x][y] != 0) {
-                x = findFreeCell(x, y)
+                y = tempY
+                x = tempX
+
+                y = findFreeCell(x, y)
             }
+
+            println("adding this number $nextNumber to cell [$x][$y]")
 
             oddOrder[x][y] = nextNumber
         }
     }
 
+
     /**
      * Takes care of the logic for up one
      */
-    private fun updateIndexX(x: Int): Int {
-        if (x == 0) {
+    private fun updateIndexY(number: Int): Int {
+        if (number == 0) {
             return lastIndexOfArr
         }
-        return (x - 1)
+        return (number - 1)
     }
 
     /**
      * Takes care of the logic for to the right one
      */
-    private fun updateIndexY(y: Int): Int {
-        if (y == lastIndexOfArr) {
-            return 0;
+    private fun updateIndexX(number: Int): Int {
+        if (number == lastIndexOfArr) {
+            return 0
         }
-        return (y + 1)
+        return (number + 1)
     }
 
     /**
      * @return the x value where there is a free spot
      */
     private fun findFreeCell(x: Int, y: Int): Int {
-        var temp = x
-        while (oddOrder[temp][y] != 0) {
-            temp = updateIndexY(temp)
-            //println(temp)
-            //println("Getting stuck here $temp")
+        var temp = y + 1
+        while (oddOrder[x][temp] != 0) {
+            temp = updateIndexX(y)
         }
 
         return temp
@@ -102,9 +108,6 @@ class MagicSquareOddOrder {
         oddOrder = Array(i) { Array(i) { 0 } }
         number = (i * i)
         lastIndexOfArr = i - 1
-
-        println(number)
-        println(lastIndexOfArr)
     }
 
     /**
@@ -129,10 +132,11 @@ class MagicSquareOddOrder {
         println("Please enter an odd value N fof NxN matrix and press enter")
         val n = scan.nextLine().trim().toInt()
 
-        println("Creating matrix")
-
         initializeMatrix(n)
         createMagicSquareOfOddOrder()
+
+        val formingAMagicSquare = FormingAMagicSquare()
+        formingAMagicSquare.checkSums(oddOrder)
 
         printOutMagicMatrix()
     }
