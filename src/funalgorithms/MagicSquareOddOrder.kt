@@ -42,6 +42,7 @@ class MagicSquareOddOrder {
         var y = 0
 
         oddOrder[x][y] = 1
+        println("adding this number 1 to cell [$x][$y]")
 
         var tempX: Int
         var tempY: Int
