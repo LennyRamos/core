@@ -39,7 +39,7 @@ class FormingAMagicSquare {
      * can make to check by double for loop if its
      * an unknown size matrix of NxN
      */
-    private fun checkSums(arr: Array<Array<Int>>) {
+    public fun checkSums(arr: Array<Array<Int>>) {
 
         val sizeOfDoubleMatrix: Int = arr.size - 1
 
