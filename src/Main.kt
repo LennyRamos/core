@@ -23,11 +23,11 @@ fun main(args: Array<String>) {
     // val diagonalDifference = DiagonalDifference();
     // diagonalDifference.run(args);
 
-    // val formingAMagicSquare = FormingAMagicSquare();
-    // formingAMagicSquare.run(args);
+     val formingAMagicSquare = FormingAMagicSquare();
+     formingAMagicSquare.run(args);
 
-    val magicSquareOddOrder = MagicSquareOddOrder()
-    magicSquareOddOrder.run()
+    // val magicSquareOddOrder = MagicSquareOddOrder()
+    // magicSquareOddOrder.run()
 
 }
 
