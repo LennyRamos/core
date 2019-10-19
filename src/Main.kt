@@ -1,6 +1,4 @@
-import funalgorithms.MagicSquareOddOrder
-import hackerrank.problemsolving.easy.DiagonalDifference
-import hackerrank.problemsolving.medium.FormingAMagicSquare
+import hackerrank.problemsolving.medium.TransformMatrixIntoMagicSquare
 
 /**
  * @author Lenny Ramos
@@ -23,8 +21,8 @@ fun main(args: Array<String>) {
     // val diagonalDifference = DiagonalDifference();
     // diagonalDifference.run(args);
 
-     val formingAMagicSquare = FormingAMagicSquare();
-     formingAMagicSquare.run(args);
+    val formingAMagicSquare = TransformMatrixIntoMagicSquare();
+    formingAMagicSquare.run(args);
 
     // val magicSquareOddOrder = MagicSquareOddOrder()
     // magicSquareOddOrder.run()

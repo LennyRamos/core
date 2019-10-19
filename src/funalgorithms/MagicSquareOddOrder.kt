@@ -1,6 +1,5 @@
 package funalgorithms
 
-import hackerrank.problemsolving.medium.FormingAMagicSquare
 import java.util.*
 
 /**
@@ -16,6 +15,9 @@ import java.util.*
  *
  * When an "up and to the right" move would leave the square,
  * it is wrapped around to the last row or first column, respectively.
+ *
+ * @author Lenny Ramos
+ * @see <a href="">
  */
 class MagicSquareOddOrder {
 
@@ -123,6 +125,20 @@ class MagicSquareOddOrder {
         }
     }
 
+
+    /**
+     * This method will be the public method for passing in a N
+     * to create a matrix of size NxN
+     *
+     * will be used over the run if dont want to ask user
+     */
+    fun createMagicSquare(size: Int) : Array<Array<Int>> {
+        initializeMatrix(size)
+        createMagicSquareOfOddOrder()
+
+        return oddOrder
+    }
+
     /**
      * main method
      */
@@ -136,8 +152,9 @@ class MagicSquareOddOrder {
         initializeMatrix(n)
         createMagicSquareOfOddOrder()
 
-        val formingAMagicSquare = FormingAMagicSquare()
-        formingAMagicSquare.checkSums(oddOrder)
+        // @Note Only for 3x3 matrix as of 10/18/2019
+        // val formingAMagicSquare = FormingAMagicSquare()
+        // formingAMagicSquare.checkSums(oddOrder)
 
         printOutMagicMatrix()
     }
