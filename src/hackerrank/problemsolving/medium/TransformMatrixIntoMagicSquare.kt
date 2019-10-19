@@ -1,9 +1,9 @@
 package hackerrank.problemsolving.medium
 
 import funalgorithms.MagicSquareOddOrder
+import utils.Log
 import java.util.*
 import kotlin.math.abs
-
 
 /**
  * We define a magic square to be an NxN matrix of distinct positive integers
@@ -34,6 +34,11 @@ import kotlin.math.abs
  * Solution @author Lenny Ramos
  */
 class TransformMatrixIntoMagicSquare {
+
+    /**
+     * Custom Logger
+     */
+    private val log: Log<TransformMatrixIntoMagicSquare> = Log(this.javaClass)
 
     //The row, column and diagonal sums
     // 0 - row 1    | 3 - column 1  | 6 - diag 1
@@ -127,7 +132,7 @@ class TransformMatrixIntoMagicSquare {
     private fun printArray(arr: Array<Int>, s: String) {
         println(s)
         for (y in arr.indices) {
-            println("$y :: " + arr[y])
+            log.write("$y :: " + arr[y])
         }
     }
 
