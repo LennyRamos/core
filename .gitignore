@@ -1,3 +1,10 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# From Github
 .DS_Store
 .idea/shelf
 /android.tests.dependencies
@@ -51,5 +58,6 @@ build/
 kotlin-ultimate/
 node_modules/
 .rpt2_cache/
-libraries/tools/kotlin-test-nodejs-runner/lib/
+libraries/tools/kotlin-test-js-runner/lib/
+libraries/tools/kotlin-source-map-loader/lib/
 local.properties

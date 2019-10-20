@@ -1,3 +1,5 @@
+package kotlin
+
 import hackerrank.problemsolving.medium.TransformMatrixIntoMagicSquare
 
 /**
@@ -7,7 +9,15 @@ import hackerrank.problemsolving.medium.TransformMatrixIntoMagicSquare
  *
  * Uncomment the set of code for now to run, will clean this
  */
+class App {
+    val greeting: String
+        get() {
+            return "Hello world."
+        }
+}
+
 fun main(args: Array<String>) {
+    println(App().greeting)
 
     // val searchAlgorithms = SearchAlgorithms()
     // searchAlgorithms.search(strategy = "BinarySearch", numToSearch = 130)
@@ -28,4 +38,3 @@ fun main(args: Array<String>) {
     // magicSquareOddOrder.run()
 
 }
-
