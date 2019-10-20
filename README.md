@@ -54,7 +54,7 @@
 
 | <a href="https://lennyramos.com/Home" target="_blank">**Lenny Ramos**</a> |
 | :---: |
-| [![FVCproductions](https://avatars1.githubusercontent.com/u/14202712?s=460&v=4)](http://fvcproductions.com)    | 
+| [![FVCproductions](https://avatars1.githubusercontent.com/u/14202712?s=150&v=4)](http://github.com/LennyRamos)    | 
 | <a href="http://github.com/LennyRamos" target="_blank">`github.com/LennyRamos`</a> |
 
 ---
