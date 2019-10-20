@@ -132,7 +132,7 @@ class MagicSquareOddOrder {
      *
      * will be used over the run if dont want to ask user
      */
-    fun createMagicSquare(size: Int) : Array<Array<Int>> {
+    fun createMagicSquare(size: Int): Array<Array<Int>> {
         initializeMatrix(size)
         createMagicSquareOfOddOrder()
 
@@ -140,7 +140,7 @@ class MagicSquareOddOrder {
     }
 
     /**
-     * main method
+     * kotlin.kotlin.main.main method
      */
     fun run() {
         val scan = Scanner(System.`in`)

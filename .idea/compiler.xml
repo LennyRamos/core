@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="algorithms.main" target="1.8" />
+      <module name="algorithms.test" target="1.8" />
       <module name="kotlin.main" target="1.8" />
       <module name="kotlin.test" target="1.8" />
     </bytecodeTargetLevel>

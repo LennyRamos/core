@@ -1,4 +1,4 @@
-package kotlin
+package main
 
 import hackerrank.problemsolving.medium.TransformMatrixIntoMagicSquare
 
@@ -34,7 +34,7 @@ fun main(args: Array<String>) {
     val formingAMagicSquare = TransformMatrixIntoMagicSquare();
     formingAMagicSquare.run(args);
 
-    // val magicSquareOddOrder = MagicSquareOddOrder()
+    // val magicSquareOddOrder = funalgorithms.MagicSquareOddOrder()
     // magicSquareOddOrder.run()
 
 }
