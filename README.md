@@ -12,9 +12,9 @@
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) 
 
-## Table of Contents (Optional)
+---
 
-> If your `README` has a lot of info, section headers might be nice.
+## Table of Contents
 
 - [Features](#features)
 - [Contributing](#contributing)
@@ -23,12 +23,19 @@
 - [Support](#support)
 - [License](#license)
 
+---
+
 ## Features
+
 > Not sure yet...
->
+
+---
+
 ## Contributing
 
 > To get started...
+
+---
 
 ### Step 1
 
@@ -59,13 +66,13 @@
 
 ---
 
-
 ## FAQ
 
 - **How do I do *specifically* so and so?**
     - No problem! Just do this.
 
 ---
+
 ## Support
 
 Reach out to me at one of the following places!
@@ -73,6 +80,7 @@ Reach out to me at one of the following places!
 - Website at <a href="https://lennyramos.com/Home" target="_blank">`<L:\RAM.OS>`</a>
 
 ---
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
