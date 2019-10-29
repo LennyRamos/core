@@ -44,23 +44,22 @@ class SockMerchant {
      * Main method
      */
     fun run() {
-        print("Hello world")
         val scan = Scanner(System.`in`)
-        var n: Int = 0
+        var number: Int = 0
+        val arr: Array<Int>
+        var userInput: String
 
-        while (scan.hasNextLine()) {
-            n = scan.nextLine().trim().toInt()
-        }
+        println("Please enter a number of socks")
+        userInput = scan.nextLine()
+        number = userInput.toInt()
 
-        var arr: Array<Int> = arrayOf()
-
-        while (scan.hasNextLine()){
-            arr = scan.nextLine().split(" ").map { it.trim().toInt() }.toTypedArray()
-        }
+        println("Please enter the sock color with a space in between")
+        userInput = scan.nextLine()
+        arr = userInput.split(" ").map { it.trim().toInt() }.toTypedArray()
 
 
-        val result: Int = getPairs(n, arr)
+        val result: Int = getPairs(number, arr)
 
-        println(result)
+        println("This many pairs $result")
     }
 }

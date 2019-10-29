@@ -12,6 +12,9 @@ plugins {
     application
 }
 
+run {
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
@@ -35,4 +38,7 @@ dependencies {
 application {
     // Define the main class for the application
     mainClassName = "main.AppKt"
+
+    val run: JavaExec by tasks
+    run.standardInput = System.`in`
 }
