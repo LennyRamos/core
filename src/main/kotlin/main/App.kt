@@ -1,6 +1,6 @@
 package main
 
-import hackerrank.problemsolving.medium.TransformMatrixIntoMagicSquare
+import hackerrank.interviewprep.warmupchallenges.SockMerchant
 
 /**
  * @author Lenny Ramos
@@ -31,10 +31,12 @@ fun main(args: Array<String>) {
     // val diagonalDifference = DiagonalDifference();
     // diagonalDifference.run(args);
 
-    val formingAMagicSquare = TransformMatrixIntoMagicSquare();
-    formingAMagicSquare.run(args);
+    // val formingAMagicSquare = TransformMatrixIntoMagicSquare();
+    // formingAMagicSquare.run(args);
 
-    // val magicSquareOddOrder = funalgorithms.MagicSquareOddOrder()
+    //val magicSquareOddOrder = funalgorithms.MagicSquareOddOrder()
     // magicSquareOddOrder.run()
 
+    val sockMerchant: SockMerchant = SockMerchant()
+    sockMerchant.run()
 }
