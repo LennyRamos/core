@@ -18,9 +18,7 @@ class SockMerchant {
      */
     private fun getPairs(numberOfSocks: Int, socks: Array<Int>): Int {
 
-        var numberOfPairs: Int = 0
-
-        // sock color to the number of it
+        var numberOfPairs = 0
         val sockMap: HashMap<Int, Int> = HashMap()
 
         for (sock: Int in socks) {
@@ -29,9 +27,9 @@ class SockMerchant {
             }
 
             if (sockMap.getValue(sock) <= 0) {
-                sockMap.getValue(sock).plus(1)
+                sockMap[sock] = sockMap.getValue(sock) + 1
             } else {
-                sockMap.getValue(sock).minus(1)
+                sockMap[sock] = sockMap.getValue(sock) - 1
                 numberOfPairs++
             }
 
