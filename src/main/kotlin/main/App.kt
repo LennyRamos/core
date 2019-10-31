@@ -1,6 +1,6 @@
 package main
 
-import hackerrank.interviewprep.warmupchallenges.SockMerchant
+import hackerrank.interviewprep.warmupchallenges.JumpingOnClouds
 
 /**
  * @author Lenny Ramos
@@ -37,6 +37,9 @@ fun main(args: Array<String>) {
     //val magicSquareOddOrder = funalgorithms.MagicSquareOddOrder()
     // magicSquareOddOrder.run()
 
-    val sockMerchant: SockMerchant = SockMerchant()
-    sockMerchant.run()
+    // val sockMerchant: SockMerchant = SockMerchant()
+    // sockMerchant.run()
+
+    val jumpingOnClouds = JumpingOnClouds()
+    jumpingOnClouds.run()
 }
