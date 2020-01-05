@@ -1,0 +1,33 @@
+Properties of Recursion:
+
+1 - Same operation is performed multiple times with different inputs.
+
+2 - In every step we try to make the problem smaller.
+
+3 - We mandatorily need to have a base condition, which tells the system when to stop the recursion.
+
+
+When to use Recursion vs Iterative
+
+1 - Whenever a problem can be broken down into similar sub-problems
+
+Format of a 'Recursive Function'
+
+1 - Recursive Case: Case where the function recur.
+2 - Base Case: Case where the function does not recur.
+
+Example:
+    SampleRecursion(parameter) {
+        if(base case is satisfied){
+            return some base case value
+        } else {
+            SampleRecursion(modified parameter);
+        }
+    }
+
+How Recursion works internally
+
+Stack follows the LIFO (last in first out)
+Stack has two function : Push & Pop
+
+
