@@ -1,13 +1,16 @@
 package main
 
 import hackerrank.interviewprep.warmupchallenges.JumpingOnClouds
+import hackerrank.interviewprep.warmupchallenges.SockMerchant
 
 /**
  * @author Lenny Ramos
  *
  * Main to execute all of the Different Algorithms and problems
  *
- * Uncomment the set of code for now to run, will clean this
+ * Uncomment the set of code for now to run
+ *
+ * @todo clean this
  */
 class App {
     val greeting: String
