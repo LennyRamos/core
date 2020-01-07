@@ -27,7 +27,17 @@ Example:
 
 How Recursion works internally
 
+Stack memory managed by System
+
 Stack follows the LIFO (last in first out)
 Stack has two function : Push & Pop
 
+----------
 
+Factorial
+
+A product of all positive integers from 1 to n
+
+denoted as n!
+
+factorial of non-negative integer n

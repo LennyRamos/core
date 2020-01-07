@@ -2,6 +2,8 @@ package main
 
 import hackerrank.interviewprep.warmupchallenges.JumpingOnClouds
 import hackerrank.interviewprep.warmupchallenges.SockMerchant
+import udemy.datastructuresandalgorithms.basics.recursion.RecursionExampleOne
+import udemy.datastructuresandalgorithms.basics.recursion.RecursionFactorial
 
 /**
  * @author Lenny Ramos
@@ -43,6 +45,12 @@ fun main(args: Array<String>) {
     // val sockMerchant: SockMerchant = SockMerchant()
     // sockMerchant.run()
 
-    val jumpingOnClouds = JumpingOnClouds()
-    jumpingOnClouds.run()
+    //val jumpingOnClouds = JumpingOnClouds()
+    //jumpingOnClouds.run()
+
+    //RecursionExampleOne.foo(3)
+
+    val factorial = 5
+    println("This is the factorial of $factorial " + RecursionFactorial.factorial(factorial))
+
 }
