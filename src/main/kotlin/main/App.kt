@@ -1,5 +1,6 @@
 package main
 
+import crackingthecodinginterview.arraysandstrings.IsUnique1_1
 import hackerrank.interviewprep.warmupchallenges.JumpingOnClouds
 import hackerrank.interviewprep.warmupchallenges.SockMerchant
 import udemy.datastructuresandalgorithms.basics.recursion.RecursionExampleOne
@@ -51,8 +52,10 @@ fun main(args: Array<String>) {
 
     //RecursionExampleOne.foo(3)
 
-    val factorial = 10
-    //println("This is the factorial of $factorial " + RecursionFactorial.factorial(factorial))
-    println("This is the fibonacci number at the $factorial place " + RecursionFibonacci.fib(factorial))
+    // val factorial = 10
+    // println("This is the factorial of $factorial " + RecursionFactorial.factorial(factorial))
+    // println("This is the fibonacci number at the $factorial place " + RecursionFibonacci.fib(factorial))
 
+    val isUnique = IsUnique1_1()
+    isUnique.execute()
 }

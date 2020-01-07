@@ -11,4 +11,8 @@ public class IsUnique1_1 {
     public IsUnique1_1() {
 
     }
+
+    public void execute() {
+        System.out.println("Got run from Kotlin main ");
+    }
 }
