@@ -41,3 +41,40 @@ A product of all positive integers from 1 to n
 denoted as n!
 
 factorial of non-negative integer n
+
+Fibonacci Series :
+
+Definition:
+
+1 - A series of numbers in which each number is the sum of the two preceding numbers.
+2 - The first two numbers are 0 and 1
+
+Example : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+
+Recursion vs Iteration
+                                        Recursion       Iteration
+Space Efficient ?                       No              Yes
+Time Efficient ?                        No              Yes
+Ease of Code ?                          Yes             No
+
+
+WHEN TO USE/AVOID Recursion?
+
+When to Use:
+1 - When we can easily break down a problem into similar sub problems
+2 - When we are ok with extra overhead (both time and space) that comes with it
+    (Not ok with things like embedded systems where space in limited)
+    (Not ok with things like air bag systems where time is crucial)
+3 - When we need a quick working solution instead of efficient one
+
+When to Avoid it:
+1 - if any of the above statements is a NO, we should not use a recursive solution
+    use a iteration approach.
+
+Practical use of 'Recursion' :
+1 - Stack
+2 - Tree : Traversal/Searching/Insertion/Deletion
+3 - Sorting : Quick Sort, Merge Sort
+4 - Divide and Conquer
+5 - Dynamic Programming
