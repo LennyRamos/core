@@ -1,0 +1,43 @@
+What is Algorithm Analysis?
+
+1 - What is the performance of a given algorithm?
+
+More precisely -> its the study of a given algorithms running time, by identifying its behaviour as the input size
+                    for the algorithm increases.
+
+
+Why should we learn it?
+
+1 - Measure the efficiency of a given algorithm
+
+
+There are three notations for runtime Analysis
+
+1 - Omega  Ω
+    a - This notation gives the tighter lower bound of a given algorithm
+    b - for any given input, the running time of a given algorithm will not be 'LESS THAN' given time
+
+2 - Big O
+    a - This notation gives the tighter upper bound of a given algorithm.
+    b - for any given input, running time of a given algorithm will not be 'MORE THAN' given time
+
+3 - Theta
+    a - This notation decides whether upper bound and a lower bound of a given algorithm are same or not.
+    b - for any given input, running time of a given algorithm will 'ON AN AVERAGE' be equal to given time.
+
+
+Examples of Algorithm run time complexities:
+
+O(1)            constant                Adding a element at the front of the linked list
+O( log n )      Logarithmic             Finding the element in sorted array
+O(n)            Linear                  Finding an element in unsorted array
+O(n log n)      Linear Logarithmic      Merge sort
+O(n^2)          Quadratic               Shortest path between 2 nodes in a graph
+O(n^3)          Cubic                   Matrix Multiplication
+O(2^n)          Exponential             Tower of Hanoi Problem
+
+How to Calculate Algorithm Time Complexity ?
+
+Iterative Algorithm
+Recursive Algorithm
+
