@@ -9,14 +9,14 @@ import searchalgorithms.strategypattern.SearchSolution
  * @see <a href="https://www.geeksforgeeks.org/binary-search/">Binary Search</a>
  */
 
-class BinarySearch() : SearchSolution() {
+class BinarySearch : SearchSolution() {
 
     override fun solve(arr: Array<Int>, i: Int): Int {
         array = arr
         numToSearchFor = i
 
         var middle: Int
-        var beginning: Int = 0
+        var beginning = 0
         var end: Int = array!!.size - 1
 
         while (beginning <= end) {
